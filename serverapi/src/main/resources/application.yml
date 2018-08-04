@@ -1,0 +1,26 @@
+server:
+  port: 9090
+
+security:
+  header:
+    prefix: "Bearer "
+  jwt:
+    secret: "crescer-2018-1-java-jwt"
+    expiration: 86400000 # 1 dia em milisegundos
+  public:
+    path: "/public/**"
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.64.2:3306/contasfacil
+    username: admin
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jackson:
+      serialization:
+        write-dates-as-timestamps: false
+
+
+
