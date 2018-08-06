@@ -54,7 +54,12 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>4.3.18.RELEASE</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
